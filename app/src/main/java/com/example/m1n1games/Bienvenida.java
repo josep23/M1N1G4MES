@@ -37,7 +37,7 @@ public class Bienvenida extends Fragment {
 
         view.findViewById(R.id.botonlogin);
 
-        navController.navigate(R.id.action_bienvenida_to_login2);
+        navController.navigate(R.id.action_bienvenida_to_menu);
 
         executor.execute(new Runnable() {
             @Override
