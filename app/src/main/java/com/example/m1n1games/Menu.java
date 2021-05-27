@@ -40,7 +40,7 @@ public class Menu extends Fragment {
         botonSalir = view.findViewById(R.id.botonsalir);
         botonRanking = view.findViewById(R.id.botonranking);
 
-        botonlightsout.setOnClickListener(view1 -> navController.navigate(R.id.action_menu_to_lightsOut));
+        botonlightsout.setOnClickListener(view1 -> navController.navigate(R.id.action_menu_to_menuLightOutFragment));
         botonConecta4.setOnClickListener(view1 -> navController.navigate(R.id.action_menu_to_conecta4));
         botonDamas.setOnClickListener(view1 -> navController.navigate(R.id.action_menu_to_damasChinas));
         botonSalir.setOnClickListener(view1 -> navController.navigate(R.id.action_menu_to_login));

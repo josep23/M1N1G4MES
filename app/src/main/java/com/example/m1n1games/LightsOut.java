@@ -306,6 +306,7 @@ public class LightsOut extends Fragment {
                             binding.botonlighout10.setImageResource(R.drawable.blanco);
                         }
                         comprobacion();
+
                     }
                 });
 
@@ -1422,7 +1423,6 @@ public class LightsOut extends Fragment {
                             binding.botonlighout43.setImageResource(R.drawable.blanco);
                         }
                         comprobacion();
-
                     }
                 });
 

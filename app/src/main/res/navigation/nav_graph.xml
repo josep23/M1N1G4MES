@@ -32,11 +32,11 @@
             android:id="@+id/action_menu_to_login"
             app:destination="@id/login" />
         <action
-            android:id="@+id/action_menu_to_lightsOut"
-            app:destination="@id/lightsOut" />
-        <action
             android:id="@+id/action_menu_to_damasChinas"
             app:destination="@id/damasChinas" />
+        <action
+            android:id="@+id/action_menu_to_menuLightOutFragment"
+            app:destination="@id/menuLightOutFragment" />
     </fragment>
     <fragment
         android:id="@+id/ranking"
@@ -67,13 +67,29 @@
         android:name="com.example.m1n1games.LightsOut"
         android:label="fragment_lights_out"
         tools:layout="@layout/fragment_lights_out" >
+
         <action
-            android:id="@+id/action_lightsOut_to_menu"
-            app:destination="@id/menu" />
+            android:id="@+id/action_lightsOut_to_menuLightOutFragment"
+            app:destination="@id/menuLightOutFragment" />
     </fragment>
     <fragment
         android:id="@+id/damasChinas"
         android:name="com.example.m1n1games.DamasChinas"
         android:label="fragment_damas_chinas"
         tools:layout="@layout/fragment_damas_chinas" />
+    <fragment
+        android:id="@+id/menuLightOutFragment"
+        android:name="com.example.m1n1games.MenuLightOutFragment"
+        android:label="fragment_menu_light_out"
+        tools:layout="@layout/fragment_menu_light_out" >
+        <action
+            android:id="@+id/action_menuLightOutFragment_to_lightsOut"
+            app:destination="@id/lightsOut" />
+        <action
+            android:id="@+id/action_menuLightOutFragment_to_menu"
+            app:destination="@id/menu" />
+        <action
+            android:id="@+id/action_menuLightOutFragment_to_ranking"
+            app:destination="@id/ranking" />
+    </fragment>
 </navigation>
